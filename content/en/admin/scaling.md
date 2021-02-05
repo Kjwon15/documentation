@@ -63,6 +63,7 @@ Sidekiq uses different queues for tasks of varying importance, where importance 
 | `push` | Delivery of payloads to other servers |
 | `mailers` | Delivery of e-mails |
 | `pull` | Fetching information from other servers |
+| `scheduler` | Recurring jobs like cleanup |
 
 The default queues and their priorities are stored in `config/sidekiq.yml`, but can be overridden by the command-line invocation of Sidekiq, e.g.:
 
